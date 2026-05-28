@@ -1,0 +1,113 @@
+# ============================================================
+# ScamGuard Shield — .gitignore
+# ============================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+*.manifest
+*.spec
+
+# --- Virtual Environments ---
+venv/
+env/
+.env
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- ML Models & Serialized Binaries ---
+# Uncomment the lines below if you do NOT want to commit model files
+# (they can be large and regenerated via training)
+# backend/saved_models/*.pkl
+# backend/saved_models/*.sig
+# backend/saved_models/.hmac_key
+
+# --- Sensitive Keys (ALWAYS ignore) ---
+*.hmac_key
+.hmac_key
+*.key
+*.pem
+*.env
+.env.*
+!.env.example
+
+# --- Database Files ---
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Node.js / Frontend ---
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- Vite ---
+dist/
+dist-ssr/
+*.local
+
+# --- IDE & Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- Logs ---
+*.log
+logs/
+log/
+
+# --- Coverage ---
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# --- OS Generated ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- Temporary Files ---
+*.tmp
+*.temp
+tmp/
+temp/
+
+# --- EDA Outputs (optional: comment out to keep in repo) ---
+# ml_pipeline/eda_visualizations/

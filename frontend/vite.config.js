@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Use VITE_BASE_URL for GitHub Pages deployment, fallback to '/' for local dev
+  base: process.env.VITE_BASE_URL || '/',
   plugins: [react()],
   server: {
     port: 5173,
